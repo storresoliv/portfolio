@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import styles from "./Header.module.css"
 
@@ -23,6 +23,12 @@ export function Header() {
   const pathname = usePathname()
   const [routeActive, setRouteActive] = useState(pathname)
 
+  useEffect(() => {
+    if (pathname) {
+      setRouteActive(pathname)
+    }
+  })
+
   return (
     <header className={styles.header}>
       <nav className={styles.navigation}>
@@ -30,9 +36,7 @@ export function Header() {
           {links.map(({ icon, route }) => (
             <li
               className={
-                routeActive === route
-                  ? styles.menuItemActive
-                  : styles.menuItem
+                routeActive === route ? styles.menuItemActive : styles.menuItem
               }
               key={route}
             >
