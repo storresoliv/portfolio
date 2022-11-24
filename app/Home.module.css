@@ -1,3 +1,46 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .link {
   background-color: var(--color-yellow-2);
+  color: var(--color-white-1);
+  padding: 12px;
+  border-radius: 24px;
+  font-weight: 600;
+  width: fit-content;
+  display: block;
+}
+
+.card {
+  padding: 150px 0 0 100px;
+  width: 50%;
+}
+
+.greeting {
+  font-size: xx-large;
+}
+
+.title {
+  font-size: 52px;
+  margin: 8px 0;
+}
+
+.subtitle {
+  font-size: large;
+  padding: 2px 4px;
+  background-color: var(--color-yellow-2);
+  width: fit-content;
+  font-weight: 600;
+}
+
+.description {
+  margin: 24px 0;
+}
+
+.picture {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  height: 500px;
 }
