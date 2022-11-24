@@ -13,6 +13,24 @@ a {
 
 * {
   box-sizing: border-box;
+  --color-white-1: #fff;
+  --color-white-2: #f0f0f0;
+  --color-black-1: #000;
+  --color-black-2: #000814;
+  --color-yellow-1: yellow;
+  --color-yellow-2: #ffd60a;
+  --color-gray-1: gray;
+  --color-gray-2: #a5a5a5;
+}
+
+html {
+  background-color: var(--color-gray-2);
+}
+
+body {
+  padding: 100px;
+  max-width: 1200px;
+  background: var(--color-white-1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +40,11 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 100px auto;
   }
 }
