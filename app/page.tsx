@@ -19,7 +19,7 @@ export default function HomePage() {
         </Link>
       </section>
       <picture className={styles.picture}>
-        <Image src={profilePic} alt="Picture of the author" />
+        <Image src={profilePic} alt="Picture of the author" priority={true} />
       </picture>
     </section>
   )

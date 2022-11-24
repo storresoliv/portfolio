@@ -1,5 +1,6 @@
 import "../styles/globals.css"
 
+import Head from "./head"
 import { Header } from "../components/Header"
 
 export default function RootLayout({
@@ -9,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head />
+      <Head />
       <body>
         <Header />
         {children}

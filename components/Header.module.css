@@ -1,18 +1,42 @@
 .header {
-  border: 1px solid var(--color-white-2);
-  border-radius: 4px;
-  padding: 4px;
   position: absolute;
-  right: 0;
+  right: 16px;
   z-index: 1;
+  top: 0;
+  height: 100%;
 }
 
 .navigation {
+  height: 100%;
   display: flex;
-  list-style: none;
-  gap: 32px;
+  align-items: center;
 }
 
-.navigation a:hover {
-  color: var(--color-yellow-2);
+.navigationList {
+  list-style: none;
+  background: var(--color-yellow-2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 8px 4px;
+}
+
+.menuItem, .menuItemActive {
+  position: relative;
+}
+
+.menuItem a:hover {
+  color: var(--color-white-2);
+}
+
+.menuItemActive:not(:first-child):before, .menuItem:not(:first-child):before {
+  position: absolute;
+  content: "|";
+  top: -25px;
+  left: 10px;
+}
+
+.menuItemActive a {
+  color: var(--color-white-1);
 }
