@@ -1,0 +1,57 @@
+.content {
+  padding: 32px 64px;
+  background-color: var(--color-gray-2);
+  /* height: 100%; */
+}
+
+.title {
+  border: 1px dotted var(--color-black-2);
+  padding: 16px 0;
+  text-align: center;
+  font-size: 36px;
+}
+
+.subtitle {
+  padding: 32px 0 0 0;
+  font: 26px/26px var(--font-family);
+}
+
+.text {
+  padding: 16px 0;
+  font: 18px/26px var(--font-family);
+}
+
+.career {
+  display: flex;
+  gap: 32px;
+}
+
+.road {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--color-black-2);
+}
+
+.roadText {
+  width: 50%;
+  text-align: center;
+  color: var(--color-yellow-2);
+  padding: 32px;
+  border-bottom: var(--border-solid-yellow-2);
+}
+
+.roadText:nth-child(even) {
+  border-left: var(--border-solid-yellow-2);
+}
+
+.roadText:nth-last-child(2) {
+  border-bottom: 0;
+}
+
+.roadText strong {
+  display: block;
+}
+
+.more {
+}

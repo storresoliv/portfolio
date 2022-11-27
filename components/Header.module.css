@@ -32,7 +32,7 @@
 
 .menuItemActive:not(:first-child):before, .menuItem:not(:first-child):before {
   position: absolute;
-  content: "|";
+  content: ":";
   top: -25px;
   left: 10px;
 }
